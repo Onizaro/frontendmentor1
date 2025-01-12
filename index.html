@@ -7,6 +7,28 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | FAQ accordion</title>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.question').forEach((question) => {
+        question.addEventListener('click', () => {
+          const answer = question.nextElementSibling;
+          const icon = question.querySelector('img');
+
+
+          if (answer.classList.contains('hidden')) {
+            answer.classList.remove('hidden');
+            answer.classList.add('visible');
+            icon.src = './assets/images/icon-minus.svg'; // change icon
+          } else {
+            answer.classList.remove('visible');
+            answer.classList.add('hidden');
+            icon.src = './assets/images/icon-plus.svg'; // change icon
+          }
+        });
+      });
+    });
+
+  </script>
 
 </head>
 <body>
