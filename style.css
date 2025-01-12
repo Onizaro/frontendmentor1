@@ -1,6 +1,27 @@
+@font-face {
+    font-family: 'WorkSansBold';
+    src: url('assets/fonts/static/WorkSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'WorkSansRegular';
+    src: url('assets/fonts/static/WorkSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'WorkSansSemiBold';
+    src: url('assets/fonts/static/WorkSans-SemiBold.ttf') format('truetype');
+}
+
+
+
 body {
     margin: 0;
     background-color: hsl(279, 100%, 97%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
 header{
     z-index: -1;
@@ -14,6 +35,7 @@ header{
 
 #title {
     display: flex;
+    padding: 0 45px 0 45px;
 }
 
 #faq-card {
@@ -22,15 +44,32 @@ header{
     width: 40vw;
     position: relative;
     z-index: 5;
+    top: -19vh;
+    border-radius: 15px;
     background-color: hsl(0, 0%, 100%);
 
 }
 
+#questions {
+    padding: 0 45px 25px 45px;
+}
+
+h1{
+    font-weight: 700;
+    font-family: "WorkSansBold", serif;
+    padding-left: 15px;
+    font-size: 3em;
+}
 .question {
     display: flex;
+    font-family: "WorkSansRegular", serif;
     justify-content: space-between;
+    font-weight: 800;
 }
 
 .answer {
     color: hsl(278, 5%, 71%);
+    font-family: "WorkSansSemiBold", serif;
+    font-weight: 100;
+    font-size: 16px;
 }
