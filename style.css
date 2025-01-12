@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    background-color: hsl(279, 100%, 97%);
+}
+header{
+    z-index: -1;
+}
+#background-image {
+    width: 100vw;
+    height: 35.5vh;
+    object-fit: cover;
+
+}
+
+#title {
+    display: flex;
+}
+
+#faq-card {
+    min-width: 350px;
+    border: 1px solid red;
+    width: 40vw;
+    position: relative;
+    z-index: 5;
+    background-color: hsl(0, 0%, 100%);
+
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+}
+
+.answer {
+    color: hsl(278, 5%, 71%);
+}
